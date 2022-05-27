@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and Time</title>
+</head>
+<body>
+	
+	<small>Copright @ <span id="autoyear"></span> Eleven Media group Co,Ltd. All right reserved.</small>
+
+	<script type="text/javascript">
+		
+
+		// Date Time(class Method)
+		let date = new Date();
+		// console.log(date);
+		// console.log(typeof date);
+
+		// let hours = new Date().getHours();
+		let hours = date.getHours();
+		console.log(hours);
+
+		let minutes = date.getMinutes();
+		console.log(minutes);
+
+		let seconds = date.getSeconds();
+		console.log(seconds);
+
+
+
+		// 1s = 1000ms 
+		// 1 jan 1970 > upnow 
+
+		let gettime = date.getTime();
+		console.log(gettime);
+		let now = Date.now();
+		console.log(now);
+
+
+		let getdate = date.getDate();
+		console.log(getdate);
+
+		// jan = 0
+		let getmonth = date.getMonth();
+		console.log(getmonth);
+
+		// sun = 0
+		let getday = date.getDay();
+		console.log(getday);
+
+		let year = date.getFullYear();
+		console.log(year);
+		let utcyear = date.getUTCFullYear();
+		console.log(utcyear);
+
+
+		document.getElementById('autoyear').textContent = utcyear;
+
+
+		// m d y // h:m:s 
+		let bd = new Date("8-10-2013");
+		bd = new Date('8/10/2013');
+		bd=new Date('Aug 10 2013');
+		bd = new Date('8/10/2013 11:35:00');
+		bd = new Date('Aug 10 2013 11:30:15');
+		// console.log(bd);
+
+
+		bd.setMonth(3);
+		bd.setDate(7);
+		bd.setFullYear(1997);
+		bd.setHours(12);
+		bd.setMinutes(46);
+		bd.setSeconds(35);
+		console.log(bd);
+
+	</script>
+
+
+
+</body>
+</html>

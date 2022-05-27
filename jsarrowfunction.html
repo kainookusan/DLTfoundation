@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+	
+	// Regular Function (manual function - without parameter)
+
+	let regfun = function (){
+		return "I Love Mandalay";
+	};	
+
+	console.log("this is reg function without parameter" + regfun());
+
+
+// ---------------------------
+
+	// Arrow Function
+
+	// i. without parameter
+
+	// Method 1
+	let annfunone = ()=>{
+		return "Hello i am arrfunone.";
+	}
+
+	console.log("this is arr function without parameter = " + annfunone());
+
+	// Method 2
+	let arrfuntwo = ()=>"Hello i am arrfuntwo.";
+
+	console.log("this is arr function without parameter = " + arrfuntwo());
+
+	// Method 3
+	let arrfunthree = ()=>(
+	{
+		name : "Aung Aung",
+		age : 25
+	});
+	console.log("this is arr function without parameter = " + arrfunthree());
+
+
+	// ii. parameter function
+		// Regular function
+	let regsinglefun = function(num1){
+		return num1 + 10;
+	}
+	console.log("this is reg fun with single parameter = " + regsinglefun(10));
+
+	let regmultifun = function(num1,num2){
+		return num1 + num2;
+	}
+	console.log("this is reg fun with multi parameter = " + regmultifun(10,20));
+
+
+
+		// arr function
+			// arr single parameter
+		let arrsinglefun1 = (num1)=>{
+			return num1 + 10;
+		}
+
+		console.log("this is arr fun with single parameter = " + arrsinglefun1(10));
+
+		let arrsinglefun2 = num1=>{
+			return num1 + 10;
+		}
+		console.log("this is arr fun with single parameter = " + arrsinglefun2(20));
+
+		let arrsinglefun3 = num1=>num1+20;
+		console.log("this is arr fun with single parameter = " + arrsinglefun3(30));
+
+
+
+			// arr multi parameter
+		let arrmultifun1 = (num1,num2)=>{
+			return num1+num2;
+		}
+		console.log("this is arr fun with multi parameter = " + arrmultifun1(100,200));
+
+		let arrmultifun2 = (num1=10,num2=20)=>{
+			return num1+num2;
+		}
+		console.log("this is arr fun with multi parameter = " + arrmultifun2());
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+<!-- https://docs.google.com/forms/d/e/1FAIpQLSdcgVYmlhkxxMVCALNuNmt80OT0baDLOSnXthWvYFW_0jGk8A/viewform -->

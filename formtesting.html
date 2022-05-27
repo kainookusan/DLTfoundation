@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		
+		<h1>Form Tag</h1>
+
+		<fieldset>
+
+			<legend><b>This is a sample form  </b></legend>
+			<!-- <legend align="center"><b>This is a sample form</b></legend> -->
+
+		<form action="" method="" enctype="multipart/form-data">
+			
+			<label for="firstname">First Name</label>
+			<input type="text" name="firstname" id="firstname" class="" placeholder="Enter your firstname" minlength="4" maxlength="10" />
+
+			<br/><br/>
+
+			<label for="lastname">Last Name</label>
+			<input type="text" name="lastname" id="lastname" class="" placeholder="Enter your lastname" minlength="4" maxlength="10" required />
+
+			<br/><br/>
+
+			<label for="eamil">Email</label>
+			<input type="eamil" name="email" id="eamil" class="" placeholder="Enter your email" />
+
+			<br/><br/>
+
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" class="" placeholder="Enter your password" required />
+
+			<br/><br/>
+
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" class="" min="14" max="50"  />
+
+			<br/><br/>
+
+			<label>Gender</label>
+			<input type="radio" name="gender" id="genderm" class="" value="1" /><label for="genderm">Male</label>
+			<input type="radio" name="gender" id="genderf" class="" value="0" checked /><label for="genderf">Female</label>
+			<input type="radio" name="gender" id="gendero" class="" value="2" /><label for="gendero">Other</label>
+
+			<br/><br/>
+
+			<label>Salary</label>
+			<input type="radio" name="salary" id="salaryc" class="" value="0" checked /><label for="salaryc">Cash</label>
+			<input type="radio" name="salary" id="salarym" class="" value="1" /><label for="salarym">Mobile Banking</label>
+
+			<br/><br/>
+
+			<label>Choose your fav color</label>
+			<input type="checkbox" name="color" id="red" class="" value="r" /><label for="red">Red</label>
+			<input type="checkbox" name="color" id="blue" class="" value="b" /><label for="blue">Blue</label>
+			<input type="checkbox" name="color" id="black" class="" value="bk"><label for="black">Black</label>
+			<input type="checkbox" name="color" id="green" class="" value="g" /><label for="green">Green</label>
+
+			<br/><br/>
+			
+			<label for="country">Citizen</label>
+			<select name="country" id="country">
+				<option selected disabled>Choose your country</option>
+				<option value="mm">Myanmar</option>
+				<option value="thai" >Thailand</option>
+				<option value="ido">Indonesio</option>
+				<option value="jp">Japan</option>
+				<option value="slk">Srilanka</option>
+			</select>
+
+			<br/><br/>
+
+			<label for="role">Role</label>
+			<select name="role" id="role" class="" multiple>
+				<option value="1">Manger</option>
+				<option value="2">Editor</option>
+				<option value="3">Sales</option>
+			</select>
+
+			<br/><br/>
+
+			<input type="hidden" name="test" id="test" class/>
+
+			<br/><br/>
+
+			<label for="dob">DOB</label>
+			<input type="date" name="dob" id="dob" class="" />
+
+			<br/><br/>
+
+			<label for="dt">Date & Time</label>
+			<input type="datetime-local" name="dt" id="dt" class="" />
+
+			<br/><br/>
+
+			<label for="nrcf">NRC Front</label>
+			<input type="file" name="nrcf" id="nrcf" class="" />
+
+			<label for="nrcb">NRC Back</label>
+			<input type="file" name="nrcb" id="nrcb" class="" multiple />
+
+			<br/><br/>
+
+			<label for="range">Range</label>
+			<input type="range" name="range" id="range" class="" min="0" max="100" step="20" value="0" />
+
+			<br/><br/>
+
+			<label for="bio">Bio</label>
+			<textarea name="bio" id="bio" rows="10" placeholder="Write your bio"></textarea>
+
+			<br/><br/>
+
+			<input type="reset" name="reset" id="reset" class="" value="Cancel" />
+			<input type="submit" name="submit" id="submit" class="" value="Register" />
+			<button type="submit" name="reg" id="reg" class="">Register</button>
+			
+
+
+		</form>
+
+		</fieldset>
+
+		<hr/>
+
+		<iframe src="tabletag.html" width="100%" height="500px"></iframe>
+
+		<iframe src="https://youtube.com"></iframe>
+
+	</body>
+</html>

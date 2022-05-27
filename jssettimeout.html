@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Settimeout</title>
+</head>
+<body>
+	
+	<div>
+		<h1 id="greeting">Welcome to out site</h1>
+	</div>
+
+	<hr/>
+
+	<div>
+		<button type="button" id="startalert" class="" onclick="startbtn()">Start Alert</button>
+		<button type="button" id="stopalert" class="" onclick="stopbtn()">Stop Alert</button>
+	</div>
+
+	<hr/>
+
+
+	<div>
+		<form action="" method="">
+			<input type="text" name="url" id="url" class=""  />	
+			<input type="button" id="btnurl" class="" value="Go URL" onclick="gourl()" />	
+		</form>
+	</div>
+
+
+	<script type="text/javascript">
+		
+		// For greeting
+
+		// window.setInterval(newmessage,2000);
+		window.setTimeout(newmessage,3000);
+
+		function newmessage(){
+			document.getElementById('greeting').textContent = 'See you Later.....';
+		}
+
+
+		// For Alert
+
+		function mypopup(){
+			window.alert('welcome Sir...');
+		}
+
+
+		let mytimer;
+
+		function startbtn(){
+			// console.log('i am start ');
+
+			mypopup();
+
+			window.setTimeout(startbtn,2000);
+
+			mytimer = window.setTimeout(startbtn,2000);
+		}
+
+		function stopbtn(){
+			// console.log('i am stop');
+			window.clearInterval(mytimer);
+		}
+
+		// For URL
+
+		function gourl(){
+			// console.log('hay');
+			const geturl = document.getElementById('url').value;
+			console.log(geturl);
+
+			window.location = 
+		}
+
+		
+
+	</script>
+</body>
+</html>
